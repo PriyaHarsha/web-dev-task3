@@ -61,7 +61,7 @@ function attacheventlistener () {
 
 //function to delete task
 function deleteItem (id) {
-  const index = toDoList.findIndex(i => i.id === id);
+  const index = toDoList.findIndex(i => i.id == id);
     const removed = toDoList.splice(index, 1);
     renderList();
     saveToStorage(toDoList);
