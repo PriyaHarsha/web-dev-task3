@@ -1,0 +1,66 @@
+.container {
+  background-color: #1d8f85;
+  padding: 30px 40px;
+  color: white;
+  text-align: center;
+}
+
+input {
+  margin: 0;
+  border: none;
+  width: 75%;
+  padding: 10px;
+  font-size: 16px;
+}
+#add {
+  padding: 10px;
+  width: 20%;
+  background: #d9d9d9;
+  color: black;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  border:none;
+  margin: 5px;
+}
+
+#add:hover {
+    background-color: #bbb;
+  }
+
+.listElement{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-items: center;
+  margin:1%;
+}
+
+.listElement .edit{
+  margin-left: auto;
+  width: fit-content;
+  height: fit-content;
+  padding:5px;
+  
+}
+
+.listElement .delete{
+  background-color: red;
+  height: fit-content;
+  padding:5px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.listElement p {
+  padding:5px;
+}
+
+#list :nth-child(odd of .listElement){
+  background-color: rgb(228, 201, 163);
+}
+
+#list :nth-child(even of .listElement){
+  background-color: rgb(235, 231, 226);
+}
