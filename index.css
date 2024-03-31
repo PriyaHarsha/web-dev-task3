@@ -56,13 +56,13 @@ span{
   border:none;
   
 }
-.listElement span{
+.listElement .checkbox{
   padding:5px;
   background-color: #1d8f85;
   margin-right:5px;
   margin-left:auto;
   border-radius: 5px;
-  
+  border: none;
 }
 
 .listElement .delete{
@@ -75,6 +75,10 @@ span{
   border:none;
 }
 
+.checkbox:hover, .delete:hover, .edit:hover{
+  cursor: pointer;
+  background-color: rgb(212, 178, 134);
+}
 .listElement p {
   color: black;
   overflow: auto;
