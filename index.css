@@ -82,6 +82,7 @@ span{
 .listElement p {
   color: black;
   overflow: auto;
+  padding: 5px;
 }
 
 .listElement .completed{
