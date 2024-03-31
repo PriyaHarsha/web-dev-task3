@@ -31,17 +31,37 @@ input {
 
 .listElement{
   display:flex;
-  flex-wrap: wrap;
   justify-content: start;
+  flex-wrap: wrap;
   align-items: center;
   margin:1%;
+  position: relative;
 }
 
+span{
+  padding: 5px;
+  color:black;
+}
+
+.checkbox{
+  width:auto;
+  margin-left:auto;
+  
+}
 .listElement .edit{
-  margin-left: auto;
   width: fit-content;
   height: fit-content;
   padding:5px;
+  border-radius: 5px;
+  border:none;
+  
+}
+.listElement span{
+  padding:5px;
+  background-color: #1d8f85;
+  margin-right:5px;
+  margin-left:auto;
+  border-radius: 5px;
   
 }
 
@@ -51,10 +71,22 @@ input {
   padding:5px;
   margin-left: 5px;
   margin-right: 5px;
+  border-radius: 5px;
+  border:none;
 }
 
 .listElement p {
-  padding:5px;
+  color: black;
+  overflow: auto;
+}
+
+.listElement .completed{
+  text-decoration: line-through;
+  color:red;
+}
+
+#list{
+  border: 2px solid;
 }
 
 #list :nth-child(odd of .listElement){
@@ -64,3 +96,34 @@ input {
 #list :nth-child(even of .listElement){
   background-color: rgb(235, 231, 226);
 }
+.menu{
+  display:flex;
+  justify-content: flex-start;
+  padding:10px;
+  font-size: larger;
+  flex-wrap: wrap;
+}
+
+.menu span{
+  text-decoration: solid;
+  color: white;
+  padding:10px;
+}
+.menu button{
+  margin-left: auto;
+}
+
+.active{
+  background-color: #bbb;
+  border-radius: 5px;
+}
+
+@media all and (max-width:720px) {
+  .menu {
+    flex-direction: column;
+  }
+  .clear{
+    margin: auto;
+  }
+}
+
