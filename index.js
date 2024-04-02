@@ -61,12 +61,9 @@ function renderList(menu) {
 function renderelement(Item){
  return (`<div class="listElement">
             <p class=${Item.status ? 'completed':'pending'}> ${Item.task}</p> 
-            <div class='control-btns'>
             <button id=${Item.id} class='checkbox'>${Item.status ? 'Completed' : 'Pending'}</button>
             <button id=${Item.id} class="edit">Edit</button>
             <button id=${Item.id} class="delete">Delete</button>
-            </div>
-            
           </div>` )
 }
 
