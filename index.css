@@ -77,7 +77,7 @@ span{
 }
 .listElement p {
   color: black;
-  overflow: auto;
+  overflow: scroll;
   margin-left: 5px;
 }
 
