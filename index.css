@@ -131,14 +131,9 @@ span{
   .menu {
     flex-direction: column;
   }
-  .listElement{
-    flex-direction: column;
   }
   .clear{
     margin: auto;
-  }
-  .control-btns{
-    margin-left: 5px;
   }
 }
 
