@@ -114,8 +114,16 @@ span{
   color: white;
   padding:10px;
 }
+.menu span:hover {
+  cursor: pointer;
+  background-color: #807e7e;
+}
 .menu button{
   margin-left: auto;
+}
+.menu button:hover {
+  cursor: pointer;
+  background-color:#807e7e
 }
 
 .active{
