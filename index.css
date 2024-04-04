@@ -115,6 +115,8 @@ span{
 }
 .menu button{
   margin-left: auto;
+  text-decoration: solid;
+  padding: 10px;
 }
 .menu button:hover {
   cursor: pointer;
@@ -126,7 +128,7 @@ span{
   border-radius: 5px;
 }
 
-@media all and (max-width:720px) {
+@media (max-width:720px) {
   .menu {
     flex-direction: column;
   }
